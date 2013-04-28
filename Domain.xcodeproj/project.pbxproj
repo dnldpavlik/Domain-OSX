@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		D2B2750E172DCA3F00FE46C7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B2750D172DCA3F00FE46C7 /* Cocoa.framework */; };
-		D2B27518172DCA3F00FE46C7 /* Domain.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B27517172DCA3F00FE46C7 /* Domain.m */; };
 		D2B27520172DCA3F00FE46C7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B2751F172DCA3F00FE46C7 /* SenTestingKit.framework */; };
 		D2B27521172DCA3F00FE46C7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B2750D172DCA3F00FE46C7 /* Cocoa.framework */; };
 		D2B27524172DCA3F00FE46C7 /* libDomain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B2750A172DCA3F00FE46C7 /* libDomain.a */; };
 		D2B2752A172DCA3F00FE46C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2B27528172DCA3F00FE46C7 /* InfoPlist.strings */; };
-		D2B2752D172DCA3F00FE46C7 /* DomainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B2752C172DCA3F00FE46C7 /* DomainTests.m */; };
+		D2B27539172DCAA800FE46C7 /* ITask.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B27536172DCAA800FE46C7 /* ITask.h */; };
+		D2B2753A172DCAA800FE46C7 /* Task.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B27537172DCAA800FE46C7 /* Task.h */; };
+		D2B2753B172DCAA800FE46C7 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B27538172DCAA800FE46C7 /* Task.m */; };
+		D2B2753C172DCAA800FE46C7 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B27538172DCAA800FE46C7 /* Task.m */; };
+		D2B2753F172DCAD200FE46C7 /* TestTask.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B2753E172DCAD200FE46C7 /* TestTask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,14 +36,15 @@
 		D2B27511172DCA3F00FE46C7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D2B27512172DCA3F00FE46C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2B27515172DCA3F00FE46C7 /* Domain-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Domain-Prefix.pch"; sourceTree = "<group>"; };
-		D2B27516172DCA3F00FE46C7 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
-		D2B27517172DCA3F00FE46C7 /* Domain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Domain.m; sourceTree = "<group>"; };
 		D2B2751E172DCA3F00FE46C7 /* DomainTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B2751F172DCA3F00FE46C7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		D2B27527172DCA3F00FE46C7 /* DomainTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DomainTests-Info.plist"; sourceTree = "<group>"; };
 		D2B27529172DCA3F00FE46C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D2B2752B172DCA3F00FE46C7 /* DomainTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DomainTests.h; sourceTree = "<group>"; };
-		D2B2752C172DCA3F00FE46C7 /* DomainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DomainTests.m; sourceTree = "<group>"; };
+		D2B27536172DCAA800FE46C7 /* ITask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITask.h; sourceTree = "<group>"; };
+		D2B27537172DCAA800FE46C7 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		D2B27538172DCAA800FE46C7 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		D2B2753D172DCAD200FE46C7 /* TestTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTask.h; sourceTree = "<group>"; };
+		D2B2753E172DCAD200FE46C7 /* TestTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D27F5597172DCB2B00DF5D22 /* Protocals */ = {
+			isa = PBXGroup;
+			children = (
+				D2B27536172DCAA800FE46C7 /* ITask.h */,
+			);
+			name = Protocals;
+			sourceTree = "<group>";
+		};
 		D2B27501172DCA3F00FE46C7 = {
 			isa = PBXGroup;
 			children = (
@@ -107,8 +119,9 @@
 		D2B27513172DCA3F00FE46C7 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				D2B27516172DCA3F00FE46C7 /* Domain.h */,
-				D2B27517172DCA3F00FE46C7 /* Domain.m */,
+				D27F5597172DCB2B00DF5D22 /* Protocals */,
+				D2B27537172DCAA800FE46C7 /* Task.h */,
+				D2B27538172DCAA800FE46C7 /* Task.m */,
 				D2B27514172DCA3F00FE46C7 /* Supporting Files */,
 			);
 			path = Domain;
@@ -125,8 +138,8 @@
 		D2B27525172DCA3F00FE46C7 /* DomainTests */ = {
 			isa = PBXGroup;
 			children = (
-				D2B2752B172DCA3F00FE46C7 /* DomainTests.h */,
-				D2B2752C172DCA3F00FE46C7 /* DomainTests.m */,
+				D2B2753D172DCAD200FE46C7 /* TestTask.h */,
+				D2B2753E172DCAD200FE46C7 /* TestTask.m */,
 				D2B27526172DCA3F00FE46C7 /* Supporting Files */,
 			);
 			path = DomainTests;
@@ -148,6 +161,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2B27539172DCAA800FE46C7 /* ITask.h in Headers */,
+				D2B2753A172DCAA800FE46C7 /* Task.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2B27518172DCA3F00FE46C7 /* Domain.m in Sources */,
+				D2B2753B172DCAA800FE46C7 /* Task.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2B2752D172DCA3F00FE46C7 /* DomainTests.m in Sources */,
+				D2B2753C172DCAA800FE46C7 /* Task.m in Sources */,
+				D2B2753F172DCAD200FE46C7 /* TestTask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +421,7 @@
 				D2B27532172DCA3F00FE46C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2B27533172DCA3F00FE46C7 /* Build configuration list for PBXNativeTarget "DomainTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +430,7 @@
 				D2B27535172DCA3F00FE46C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
