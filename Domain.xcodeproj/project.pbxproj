@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D2B2750E172DCA3F00FE46C7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B2750D172DCA3F00FE46C7 /* Cocoa.framework */; };
+		D2282843172EE1B200CBADD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B27512172DCA3F00FE46C7 /* Foundation.framework */; };
+		D261BC64172ED32700CC0F88 /* ITask.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D2B27536172DCAA800FE46C7 /* ITask.h */; };
+		D261BC65172ED32A00CC0F88 /* Task.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D2B27537172DCAA800FE46C7 /* Task.h */; };
 		D2B27520172DCA3F00FE46C7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B2751F172DCA3F00FE46C7 /* SenTestingKit.framework */; };
 		D2B27521172DCA3F00FE46C7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B2750D172DCA3F00FE46C7 /* Cocoa.framework */; };
 		D2B27524172DCA3F00FE46C7 /* libDomain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B2750A172DCA3F00FE46C7 /* libDomain.a */; };
 		D2B2752A172DCA3F00FE46C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2B27528172DCA3F00FE46C7 /* InfoPlist.strings */; };
-		D2B27539172DCAA800FE46C7 /* ITask.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B27536172DCAA800FE46C7 /* ITask.h */; };
-		D2B2753A172DCAA800FE46C7 /* Task.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B27537172DCAA800FE46C7 /* Task.h */; };
 		D2B2753B172DCAA800FE46C7 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B27538172DCAA800FE46C7 /* Task.m */; };
 		D2B2753C172DCAA800FE46C7 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B27538172DCAA800FE46C7 /* Task.m */; };
 		D2B2753F172DCAD200FE46C7 /* TestTask.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B2753E172DCAD200FE46C7 /* TestTask.m */; };
@@ -28,6 +28,20 @@
 			remoteInfo = Domain;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D261BC63172ED30400CC0F88 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				D261BC64172ED32700CC0F88 /* ITask.h in CopyFiles */,
+				D261BC65172ED32A00CC0F88 /* Task.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D2B2750A172DCA3F00FE46C7 /* libDomain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDomain.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2B2750E172DCA3F00FE46C7 /* Cocoa.framework in Frameworks */,
+				D2282843172EE1B200CBADD7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,18 +170,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		D2B27508172DCA3F00FE46C7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2B27539172DCAA800FE46C7 /* ITask.h in Headers */,
-				D2B2753A172DCAA800FE46C7 /* Task.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		D2B27509172DCA3F00FE46C7 /* Domain */ = {
 			isa = PBXNativeTarget;
@@ -175,7 +177,7 @@
 			buildPhases = (
 				D2B27506172DCA3F00FE46C7 /* Sources */,
 				D2B27507172DCA3F00FE46C7 /* Frameworks */,
-				D2B27508172DCA3F00FE46C7 /* Headers */,
+				D261BC63172ED30400CC0F88 /* CopyFiles */,
 			);
 			buildRules = (
 			);
